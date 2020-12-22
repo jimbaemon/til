@@ -29,3 +29,39 @@ h1 {
 * `;` 이후 새로운 `Property` 와 `VALUE` 가 나온다.
 * 부모요소 `body` 를 `h1` 위쪽으로 넣어주는게 일반적이다. ( 상관은 없지만 직관성 문제 )
 
+
+
+## CSS 선택자
+
+#### 선택자 종류
+
+```
+//1. 태그 선택자 HTML 태그에 존재하는 선택자를 사용해야함
+p {
+	color : red;
+}
+//적용 예시
+<p> </p>
+
+//2. 클래스 선택자 class 에 포함된 선택자
+.center{
+	color : blue;
+}
+//적용 예시
+<p class="center"> </p>
+<div class="center"> </div>
+
+//3. 아이디 선택자
+#center{
+	color : green;
+}
+//적용 예시
+
+//4. 태그와 함께 쓰는 선택자
+p.center{
+	color : yellow;
+}
+//적용 예시
+<p class="center"> </p>
+```
+
