@@ -65,3 +65,83 @@ p.center{
 <p class="center"> </p>
 ```
 
+
+
+#### 그룹 선택자
+
+```
+h1 {text-align:center; color:red;}
+p {text-align:center; color:red;}
+//위의 h1 과 p 는 css 내용이 똑같다 아래와 같이 그룹선택자(,)로 묶을수 있다
+h1, p {
+	text-align:center, color:red;
+}
+```
+
+
+
+#### 하위 선택자
+
+````
+//p 태그 밑에 있는 span (`space` 로 구분) 
+p span {
+	text-align:center;
+	color:red;
+}
+````
+
+
+
+#### 전체 선택자
+
+````
+//말그대로 전체
+* {
+	font-size : 14px; 
+	line-height : 24px;
+}
+````
+
+
+
+#### 선택자 우선순위
+
+1. !important Style
+
+   ```
+   p {
+   	color : red !important;
+   }
+   ```
+
+2. Inline Style
+
+   ```
+   <p style="color:gold;"
+   ```
+
+3. ID Selector Style
+
+   ```
+   #id {
+   	color:blue;
+   }
+   ```
+
+4. Class Selector Style
+
+   ```
+   .id {
+   	color:yellow;
+   }
+   ```
+
+5. Tag Selector Style 
+
+   ```
+   p {
+   	color:green;
+   }
+   ```
+
+   
