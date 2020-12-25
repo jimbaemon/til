@@ -145,3 +145,18 @@ p span {
    ```
 
    
+
+## 텍스트 스타일
+
+>  기본 폰트 사이즈는 16px 이다.
+
+* `font-size` : 텍스트의 크기를 지정하는 속성 [px, em, pt, %, rem]
+* `font-weight` : 글꼴 두께를 지정하는 특성 [bold, bolder, lighter, normal] **[400=normal(default), 700=bold]
+* `line-height` : 줄 간격을 지정하는 특성 [px, em, pt, %, rem]
+* `font-family` : 글꼴을 지정하는 속성
+* `font-style` : 문자 스타일 (기울림체) [normal, italic, oblique]
+* `color` : 글꼴 색을 지정 [#000000, rgb(0, 0, 0), rgba(0,0,0,0.5)] ** rgba 마지막은 투명도
+* `text-decoration` : 텍스트 줄 표시 / 제거 [none, underline, overline, line-through]
+* `text-transform` : 대소문자 변환 [none, capitlize, uppercase, lowercase]
+* `text-align` : 문자 정렬 방법을 지정하는 속성 [center, left, right, justify]
+* `text-shadow` : 텍스트 그림자 효과 
