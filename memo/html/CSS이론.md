@@ -160,3 +160,16 @@ p span {
 * `text-transform` : 대소문자 변환 [none, capitlize, uppercase, lowercase]
 * `text-align` : 문자 정렬 방법을 지정하는 속성 [center, left, right, justify]
 * `text-shadow` : 텍스트 그림자 효과 
+
+
+
+## CSS 박스 모델
+
+* `border` :  아래의 속성을 `border` Property 에 전부 때려박아도 된다.
+  * `border-style` : 태두리 스타일
+  * `border-width` : 태두리 두께
+  * `border-color` : 테두리 색상
+  * `border-xxx-xxx` : 로 상하좌우 방향을 선택할수 있다.
+* `border-radius` : 모서리 둥굴게 만드는 기능
+  * 옵션 순서 대로 11시, 1시, 5시, 7시 를 둥글게 만든다 -> `border-radius : 15px 15px 15px 15px`
+  * 하나로 내방향을 퉁칠수도 있다. -> `border-radius : 15px`
