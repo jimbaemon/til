@@ -173,6 +173,7 @@ p span {
 * `border-radius` : 모서리 둥굴게 만드는 기능
   * 옵션 순서 대로 11시, 1시, 5시, 7시 를 둥글게 만든다 -> `border-radius : 15px 15px 15px 15px`
   * 하나로 내방향을 퉁칠수도 있다. -> `border-radius : 15px`
-
 * `margin` : 모든 콘텐츠는 border 라는 태두리가 있는데 margin 은 border `밖의 간격`을 조정하는 것
 * `padding` : boder `안쪽 간격`을 조정하는 것 
+* `box-sizing`** : 
+  * border-box : padding, margin 등의 옵션을 주면 세팅한 width, height 보다 스타일이 커지는것을 방지해주는 기능
