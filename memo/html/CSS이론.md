@@ -159,7 +159,7 @@ p span {
 * `text-decoration` : 텍스트 줄 표시 / 제거 [none, underline, overline, line-through]
 * `text-transform` : 대소문자 변환 [none, capitlize, uppercase, lowercase]
 * `text-align` : 문자 정렬 방법을 지정하는 속성 [center, left, right, justify]
-* `text-shadow` : 텍스트 그림자 효과 
+* `text-shadow` : [offset-x] [offset-y] [blur-radius] [color]
 
 
 
@@ -177,3 +177,8 @@ p span {
 * `padding` : boder `안쪽 간격`을 조정하는 것 
 * `box-sizing`** : 
   * border-box : padding, margin 등의 옵션을 주면 세팅한 width, height 보다 스타일이 커지는것을 방지해주는 기능
+
+* `box-shadow` :  [x축 이동거리] [y축 이동거리] [퍼짐정도] [색상]
+  * `inset`  : 내부 그림자 옵션
+  * `offset-x` : 수평 그림자의 offset 값
+  * `offset-y` : 수직 그림자의 offset 값
