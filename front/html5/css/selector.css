@@ -1,0 +1,14 @@
+p {
+    text-align: center;
+    color: red;
+}
+
+p.center{
+    text-align: right;
+    color: blue;
+}
+
+#center {
+    text-align: left;
+    color: green;
+}

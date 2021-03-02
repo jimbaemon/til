@@ -1,0 +1,9 @@
+.box {
+    font-size: 50px;
+    text-align: center;
+    border: 10px solid red;
+    padding: 10px;
+    width: 400px; 
+    height: 100px;
+    box-sizing: border-box; /*boder크기, padding 등에 따라서 width, height 가영향을 받지 않도록 하는 기능*/
+} 

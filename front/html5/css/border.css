@@ -1,0 +1,8 @@
+.box{
+    width: 400px;
+    height: 400px;
+    /*border-color: darkblue;
+    border-width: 5px;
+    border-style: dashed;*/
+    border: 5px solid darkblue;
+}

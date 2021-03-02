@@ -1,0 +1,32 @@
+.parent{
+    border: 1px solid red;
+    width: 600px;
+    height: 200px;
+}
+.child{
+    border: 1px solid blue;
+    width: 200px;
+    height: 50px;
+}
+
+.box{
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+}
+
+/*box 아래 모든 div 에 대한 적용*/
+.box div{
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+/*box 바로 아래의 범위에만 적용*/
+.box > div{
+    border: 1px solid yellow;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
