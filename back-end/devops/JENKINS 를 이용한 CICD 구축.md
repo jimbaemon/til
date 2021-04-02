@@ -21,7 +21,7 @@ systemctl start docker
 > docker hub 에서 jenkins latest 버전확인
 
 ```bash 
-docker run -d -p 8080:8080 --name jk jenkins/jenkins:2.277.1-lts-centos
+docker run -d -p 8080:8080 -v ~/config:/app/config -v /app/jenkins_home/var/jenkins_home --name jk jimbae/jenkins-tripko
 docker exec -it jk cat /var/jenkins_home/secrets/initialAdminPassword #초기화 암호 조회
 ```
 
@@ -69,7 +69,7 @@ https://goddaehee.tistory.com/260
 
 https://jojoldu.tistory.com/265?category=635883
 
-
+https://galid1.tistory.com/747
 
 
 
