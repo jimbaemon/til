@@ -34,3 +34,29 @@
 
 ## JpaRepository 살펴보기
 
+* JpaRepository  구조를 보면 아래와 같다.
+
+  ![image-20210409230148397](http://www.jimbae.com:59005/image/269)
+
+#### JpaRepository
+
+* Spring Data JPA 에서 쓰이는 일부 메서드가 잇다.
+* 주요메서드
+  * getOne(ID) : 엔티티를 프록시로 조회한다.
+
+#### PagingAndSortingRepository
+
+* spring-data-commons 에 포함된다.
+* 페이징 처리는 대부분 동일하기 때문에 공통[common] 에 포함된다. [전환이 쉽다]
+
+#### CrudRepository
+
+* 기본적인 CRUD 기능들이 들어있는 Interface
+* 주요메서드
+  * save(S) : 엔티티 저장 및 병합 기능
+  * delete(T) : 엔티티 하나 삭제
+  * findById(ID) : 엔티티 하나를 조회한다
+
+#### Repository
+
+* Marker interface 라고 한다.
