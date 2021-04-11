@@ -60,3 +60,45 @@
 #### Repository
 
 * Marker interface 라고 한다.
+
+
+
+## 쿼리 메소드 기능
+
+* Spring Data JPA 는 interface 기반이라, JPARepository 를 통해 새로운 메소드를 생성하려면 모든 메소드를 구현해 주어야 한다.
+
+  ![image-20210411211121201](http://www.jimbae.com:59005/image/270)
+
+* 스프링 데이터 JPA 는 이러한 문제를 해결하기 위해 아래와 같은 방법을 제공한다.
+
+
+
+### 메소드 이름으로 쿼리 생성
+
+* 이름과 나이로 특정 멤버를 찾는 쿼리를 생성해 보자
+
+  * 전통방식
+
+    ```java
+    public List<Member> findByUsernameAndAgeGreaterThen(String username, int age){
+        return em.createQuery("select m from Member m where m.username = :username and m.age > :age")
+            .setParameter("username", username)
+            .setParameter("age", age)
+            .getResultList();
+    }
+    ```
+
+  * Spring DATA JPA 방식
+
+    ```java
+    public interface MemberRepository extends JpaRepository<Member, Long> {
+    
+    	List<Member> findByUsernameAndAgeGreaterThan(String username, int age); //갸꿀
+    
+    }
+    ```
+
+    > https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation 참조
+    >
+    > 두개 넘어가면 너무 귀찮아진다......................
+
