@@ -102,3 +102,64 @@
     >
     > 두개 넘어가면 너무 귀찮아진다......................
 
+
+
+### 메소드 이름으로 JPA NamedQuery 호출
+
+* **거의 쓸일이 없다.**
+
+* 사용법 
+
+  ```java
+  ...
+  @NamedQuery(
+  	name="Member.findByUsername",
+  	query = "select m from Member m where m.username = :username"
+  )
+  public class Member {
+      ...
+  }
+  ```
+
+  * Entity 클래스 상단에 @NamedQuery 어노테이션 사용후, 이름과 쿼리를 생성해 준다.
+
+  
+
+  * **기존방식**
+
+  ```java
+  ...
+  @Repository
+  public class MemberJpaRepository {
+      ...
+  	public List<Member> findByUsername(String username){
+  		return em.createNamedQuery("Member.findByUsername", Member.class)
+  			.setParameter("username", "회원1")
+  			.getResultList();
+  	}        
+      ...
+  }
+  ```
+
+  > Repository 에서 지정한 이름을 createNamedQuery 메소드를 이용하여 호출한다.
+
+  
+
+  
+
+  * **SPRING DATA JPA 방식**
+
+  ```java
+  ...
+  public interface MemberRepository extends JpaRepository<Member, Long> {
+      ...
+      //@Query(name = "Member.findByUsername")
+  	List<Member> findByUsername(@Param("username") String username);
+   	...       
+  }
+  ```
+
+  > 메서드 생성후 @Query("name") 어노테이션을 이용하여 해당 쿼리를 호출,  파라미터는 @Param 어노테이션을 이용해야 한다.
+  >
+  > **Entitiy명.namequery명과 메소드 이름을 동일하게 하는 관례를 지키면 @Query를 쓰지 않아도 정상적으로 작동한다.**
+
