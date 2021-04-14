@@ -163,3 +163,24 @@
   >
   > **Entitiy명.namequery명과 메소드 이름을 동일하게 하는 관례를 지키면 @Query를 쓰지 않아도 정상적으로 작동한다.**
 
+
+
+### @Query 어노테이션 리포지토리 메소드에 정의하기
+
+* 아래와 같은 방식으로 메소드 위에 쿼리를 바로 작성할 수도 있다.
+
+```java
+...
+public interface MemberRepository extends JpaRepository<Member, Long> {
+	@Query("select m from Member m where m.username = :username and m.age = :age")
+	List<Member> findUser(@Param("username") String username, @Param("age") int age);
+}
+...
+```
+
+
+
+## 파라미터 바인딩
+
+
+
