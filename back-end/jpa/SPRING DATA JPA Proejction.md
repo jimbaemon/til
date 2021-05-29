@@ -9,7 +9,7 @@ publicinterfaceUsernameOnly{
 ```
 > 단순히 유저 이름을 조회 하고 싶을떄 위와 같이 getter 를 이용해서 함수만 생성해두면 조회 가능
 
-* 쿼리는 아래와 같이 이름만 조회하도록 나간다
+* 쿼리는 아래와 같이 이름만 조회하도록 나간다.
 ```sql
 select m.username from member m
 ``` 
