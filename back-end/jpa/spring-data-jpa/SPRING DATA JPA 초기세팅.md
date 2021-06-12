@@ -177,10 +177,3 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 }
 ...
 ```
-
-
-
-## 파라미터 바인딩
-
-
-
