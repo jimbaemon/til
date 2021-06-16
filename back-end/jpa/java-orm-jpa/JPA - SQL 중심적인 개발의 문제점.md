@@ -53,3 +53,67 @@
 
 * 결론적으로 **객체답게 모델링 할수록** 매핑 작업만 늘어나게 되고, 결국엔 SQL 에 맞춰서 설계 개발을 진행하게 된다.
 
+
+
+## JPA 소개
+
+* Java Persistence API
+* 자바 진영의 **ORM** 기술 표준
+
+**ORM 이란**
+
+* Open Relational mapping (객체 관계 매핑)
+* 객체는 객체대로 설계, RDB 는 RDB 대로 설계
+
+
+
+* JPA 는 Java 와 DB 사이에서 SQL 을 생성해 주는 역활.
+* Jpa 는 Entity를 분석하여 JDBC API 를 사용하여 SQL 을 생성.
+
+### JPA 를 사용해야 하는 이유?
+
+#### 생산성
+
+* 저장 : jpa.persist(member);
+* 조회 : jpa.find(memberId);
+* 수정 : member.setName("변경") -> 자동 수정
+* 삭제 : jpa.remove(member);
+
+#### 유지보수
+
+* 기존 : 필드 추가시 모든 SQL 수정 필요
+* JPA : 변수하나 추가하면 끝 
+
+#### 패러다임 불일치 해결
+
+* JPA와 상속
+
+  * 하위테이블이 존재할시 기존 SQL 2개 생성을 해야 하는 상황을, JPA 는 알아서 SQL 을 생성해준다.
+
+* JPA와 연관관계, 객체 그래프 탐색
+
+  * 연관관계 저장시
+
+    ```java
+    member.setTeam(team);
+    jpa.persist(member); //member 에 저장된 Team 도 같이 저장된다.
+    ```
+
+  * 객체 그래프 탐색시
+
+    ```java
+    jpa.find(Member.class, member);
+    Team team = member.getTeam(); //member 조회시 team 도 같이 조회된다.
+    ```
+
+#### 성능향상
+
+* 1차 캐시와 동일성 보장
+  * 같은 트랜잭션 안에서는 같은 엔티티를 반환 - 추가 조회가 필요 없다.
+* 트랜잭션을 이용한 쓰기 지연
+  * 트랜잭션 단위로 모아서 insert, update 등을 한번에 벌크
+* 지연로딩
+  * 필요할 시점에 연관객체를 조회
+
+
+
