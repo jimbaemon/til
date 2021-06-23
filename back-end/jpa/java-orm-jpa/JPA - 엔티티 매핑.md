@@ -20,20 +20,14 @@
 * 속성
 
   * name : 매핑할 테이블 이름
-  * catalog :  데이터베이스 catalog 매핑
+  * catalog :  데이터베이스 catalog 매핑r
   * schema : 데이터베이스 schema 매핑
-  * uniqueConstraints : DDL 생성시 유니크 제약 조건 생성
+  * uniqueConstraints : DDL 생성시 유니크 제약 조건 생성qq
 
 
 
 
 ## 필드와 컬럼 매핑
-
-### @Id
-
-* PK 매핑
-
-  
 
 ### @Column
 
@@ -79,13 +73,89 @@
 
 
 
+## 기본 키 매핑
+
+### @Id
+
+* 기본키 매핑
+* 직접 할당할때 사용
 
 
-### 기본 키 매핑
 
+### @GeneratedValue(strategy = GenerationType.전략)
 
+* 자동 생성
 
+* DB 최적화된 전략을 사용하는것이 좋다
 
+* PK 값이 DB에 Insert 되야 생성되기 때문에, 초기 create 후 추가 작업을 진행하기를 원하면,  em.persist() 로 id 를 발급받아서 진행해야 한다.
 
-### 연관관계 매핑
+* 전략 : 
+
+  * `IDENTITY` : 
+
+    * 기본키 생성을 데이터베이스에 위임 (Mysql Auto Increment)
+
+      ```java
+      @Entity
+      
+      public class member{
+          @Id
+          @GeneratedValue(strategy = GenerationType.IDENTITY)
+          private Long id;
+      }
+      ```
+
+      
+
+  * `SEQUENCE` :
+
+    * sequence 미 지정시 sequence 자동 생성
+
+    * `@SequenceGenerator()`  어노테이션을 사용한다.
+
+      * allocationSize 는 sequence next call 을 자주 하지 않도록 미리 가져올 시퀀스 갯수를 설정하는것
+
+      ```java
+      @Entity
+      @SequenceGenerator(
+      	name = "MEMBER_SEQ_GENERATOR",
+          sequenceName = "MEMBER_SEQ",
+          initialValue = 1, allocationSize = 1
+      )
+      public class member{
+          @Id
+          @GeneratedValue(strategy = GenerationType.SEQUENCE)
+          private Long id;
+      }
+      ```
+
+  * `TABLE` :
+
+    * 키 생성 전용 테이블 생성
+
+    * 장점 : 모든 데이터베이스에 적용 가능
+
+    * 단점 : 성능
+
+    * `@TableGenerator` 어노트에션을 사용한다.
+
+      ```java
+      @Entity
+      @TableGenerator(
+      	name = "MEMBER_SEQ_GENERATOR",
+          table = "MY_SEQUENCES",
+          pkColumnValue = "Member_SEQ", allocationSize = 1
+      )
+      public class member{
+          @Id
+          @GeneratedValue(strategy = GenerationType.TABLE, 
+                          generator = "MEMBER_SEQ_GENERATOR")
+          private Long id;
+      }
+      ```
+
+      
+
+## 연관관계 매핑
 
