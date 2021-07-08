@@ -21,9 +21,9 @@
   * What work can get done in this sprint
   * How will the chosen work get done?
 
-### DO AND Do Not
+### Do AND Do Not
 
-#### **DO**
+#### **Do**
 
 * Make sure the team sets and understands the sprint goal and **how success will be measured.**
 * Do ensure **you have a well-groomed backlog** with your priorities and dependencies in order.
@@ -33,11 +33,47 @@
 * **Leave out work where you won’t be able to get the dependencies done,**
 * Finally, once a decision or plan is made, make sure someone captures that information in your project management or collaboration tool
 
-#### DO Not
+#### Do Not
 
 * **Don’t pull in too many stories**, overestimate velocity
 * Don’t forget about **quality or technical debt.**
 * Don’t let the team have a fuzzy view of what's in the sprint.  Nail it down, and don’t focus so much on moving *fast* that you forget to make sure everyone’s moving in *the same direction*.
 * Also, don’t take on a large amount of unknown or high-risk work.
   * Break down stories that are large or have high uncertainty, and don't be afraid to leave some of that work for the next sprint.
-* If you hear concerns from the team, whether it’s about velocity, low-certainty work, or work they think is bigger than what they estimated, **don’t ignore it.**
+* **If you hear concerns from the team**, whether it’s about velocity, low-certainty work, or work they think is bigger than what they estimated, **don’t ignore it.**
+
+
+
+## Spring Planning
+
+> Sprint planning is an event in scrum that kicks off the sprint. The purpose of sprint planning is to define what can be delivered in the sprint and how that work will be achieved.
+
+* You need to decide on **how long the time** box is going to be, the sprint goal, and **where** you're going to **start.**
+* The sprint planning session kicks off the sprint by **setting the agenda and focus.**
+* Bad sprint plans can derail the team by setting **unrealistic expectations.**
+
+### The What
+
+* The **product owner describes** the objective(or goal) of the sprint and what backlog items contribute to that goal. 
+* The **scrum team decides** what can be done in the coming sprint and what they will do during the sprint
+
+### The How
+
+* The **development team plans the work necessary** to deliver the sprint goal.
+* sprint plan is a **negotiation** between the development team and product owner
+
+### The Who
+
+*  You cannot do sprint planning without the **product owner** or the **development team.** 
+* The **product owner defines the goal** based on the value that they seek.
+* The **development team** needs to understand how they can or cannot deliver that goal.
+
+### The Inputs
+
+* A great starting point for the sprint plan is the product backlog as it provides a list of ‘stuff’ that could potentially be part of the current sprint.
+* The team should also look at the existing work done in the increment and have a view to capacity.
+
+### The Outputs
+
+* The most important outcome for the sprint planning meeting is that the **team can describe the goal of the sprint** and how they will start working toward that goal. 
+
