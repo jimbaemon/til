@@ -77,3 +77,13 @@
 
 * The most important outcome for the sprint planning meeting is that the **team can describe the goal of the sprint** and how they will start working toward that goal. 
 
+### Sprint planning Preperation
+
+* The product owner must be prepared, combining the lessons from the previous sprint review, stakeholder feedback, and their vision for the product, so they set the scene for the sprint.
+* the [product backlog](https://www.atlassian.com/agile/scrum/backlogs)should be up-to-date and refined to provide clarity.
+* However, for most teams, it’s better to get the **team together to review and refine the backlog** prior to sprint planning.
+
+### Spring planning time limiting
+
+* Sprint planning should be constrained no more than two hours for each week of the sprint.
+* 
