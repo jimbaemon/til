@@ -86,4 +86,21 @@
 ### Spring planning time limiting
 
 * Sprint planning should be constrained no more than two hours for each week of the sprint.
-* 
+* A timebox is a maximum time allowed; there is no minimum time allowed.
+
+### Focus on the outcomes not the work
+
+* Scrum is an empirical process, meaning that you can’t plan upfront, but rather [learn by doing](https://www.atlassian.com/team-playbook/plays?attributes=customer-centricity), and then feed that information back into the process
+
+* User stories, written like the one below, re-focus defects, issues, and improvements on the outcome the customer is seeking rather than the observed problem.
+
+  ```
+  As <type of user>, I want <a goal> so that <a reason>
+  ```
+
+* By adding clear, measurable results to the user story, the outcomes can be clearly measured, and you know when you are done. 
+
+### Don’t pretend you know more than you do
+
+* The team needs to define what can or cannot be done in the sprint:  estimated effort vs capacity.
+* Good estimation requires a **trust-based environment where information is given freely,** and assumptions are discussed in the pursuit of learning and improvement,
