@@ -104,3 +104,84 @@
 
 * The team needs to define what can or cannot be done in the sprint:  estimated effort vs capacity.
 * Good estimation requires a **trust-based environment where information is given freely,** and assumptions are discussed in the pursuit of learning and improvement,
+
+
+
+## Ceremonies
+
+### Sprint Planning
+
+**Attendees:**
+
+* Development Team
+* Scrum Master
+* Product Owner
+
+**When:** At the beginning of a sprint.
+
+**Duration:** a Hour per week
+
+**Purpose:** 
+
+* the product owner will have a prioritized product backlog.
+* The development team will then make a sprint forecast outlining how much work the team can complete from the product backlog.
+
+### Daily Stand-up
+
+**Attendees:**
+
+* Development Team
+* Scrum Master
+* Product Owner
+
+**When:** Once per day
+
+**Duration:** No more than 15 minutes.
+
+**Purpose:**  quickly inform everyone of what's going on across the team.
+
+- What did I complete yesterday?
+- What will I work on today?
+- Am I blocked by anything?
+
+### Iteration Review
+
+**Attendees:**
+
+**Required:** 
+
+* development team
+* scrum master
+
+* product owner
+
+**Optional:** 
+
+* project stakeholders
+
+**When:** At the end of a sprint or milestone.
+
+**Duration:** 30-60 minutes.
+
+**Purpose:** showcase the work of the team.
+
+* Time for the team to celebrate their accomplishments
+* Get immediate feedback from project stakeholders.
+
+### Retrospective
+
+**Attendees:**
+
+* Development Team
+* Scrum Master
+* Product Owner
+
+**When:** At the end of an iteration.
+
+**Duration:** 60 minutes.
+
+**Purpose:** help the team understand what worked well–and what didn't.
+
+* Find out what's working so the team can continue to focus on those areas.
+* Find out what's not working and use the time to find creative solutions and develop an action plan.
+* Continuous improvement
