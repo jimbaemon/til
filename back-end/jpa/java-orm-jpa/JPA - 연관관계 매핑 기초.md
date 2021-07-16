@@ -59,5 +59,38 @@ private Team team
   
 * 양방향 관계일시 양쪽에 모두 값을 세팅해 주어야 한다. (1차 캐시 문제)
 
-* 
+  ```java
+  @Entity
+  public class Team{
+      @OneToMany(mappedBy = "team")
+      private List<Member> members = new ArrayList<>();
+      
+      public void addMember(Member member){
+          member.setTeam(this);
+          members.add(member);
+      }
+  }
+  
+  @Entity
+  public class Member{
+      @ManyToOne
+      @JoinColumn()
+      private Team team;
+      
+      public void changeTeam(Team team){
+          team.getMembers().add(this);
+          this.team = team;
+      }
+  }
+  ```
+
+
+
+## 양방향 매핑 정리
+
+* **단방향 매핑만으로도 이미 연관관계 매핑은 완료**
+* 양방향 매핑은 반대 방향으로 조회 기능이 추가된 것 뿐
+* JPQL 에서 역방향으로 탐색할 일이 많음
+* 단방향 매핑을 잘 하고 양방향은 필요할 때 추가해도 됨
+* **연관관계의 주인은 외래 키의 위치를 기준으로 정해야함.**
 
