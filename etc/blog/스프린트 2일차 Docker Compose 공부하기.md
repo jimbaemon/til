@@ -5,7 +5,7 @@
 - What did I work on yesterday?
   - Docker 서비스 설치
 - What am I working on today?
-  - Docker Compose 공부 및 내용 정리
+  - Docker Compose 공부 및 내용 정리 
 - What issues are blocking me?
   - N/A
 
