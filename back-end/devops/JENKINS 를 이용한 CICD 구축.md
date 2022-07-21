@@ -1,6 +1,6 @@
 # JENKINS 를 이용한 CI/CD 구축
 
-​	![image-20210320120426382](http://www.jimbae.com:59005/image/255)
+​	![image-20210320120426382](http://img.jimbae.com/image/255)
 
 
 ## 도커 설치 [CENTOS7]
