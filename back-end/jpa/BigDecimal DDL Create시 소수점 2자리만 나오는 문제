@@ -1,0 +1,3 @@
+BigDecimal 사용시 precision 과 Scale 둘다 설정해 줘야함
+
+https://stackoverflow.com/questions/16289804/lost-precision-when-storing-bigdecimal-into-h2-using-hibernate
